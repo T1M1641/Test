@@ -10,176 +10,178 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/name"
+                android:textSize="24sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100px"
+                android:gravity="center_horizontal"
+                android:text="@string/question1"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="180px"
+                android:entries="@array/question1_answers" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="250px"
+                android:text="@string/question2"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="330px"
+                android:entries="@array/question2_answers" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="400px"
+                android:text="@string/question3"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner3"
+                android:layout_width="match_parent"
+                android:layout_marginTop="480px"
+                android:layout_height="wrap_content"
+                android:entries="@array/question3_answers" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="550px"
+                android:text="@string/question4"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner4"
+                android:layout_width="match_parent"
+                android:layout_marginTop="680px"
+                android:layout_height="wrap_content"
+                android:entries="@array/question4_answers" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="740px"
+                android:text="@string/question5"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner5"
+                android:layout_width="match_parent"
+                android:layout_marginTop="810px"
+                android:layout_height="wrap_content"
+                android:entries="@array/question5_answers" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="860px"
+                android:text="@string/question6"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner6"
+                android:layout_width="match_parent"
+                android:layout_marginTop="930px"
+                android:layout_height="wrap_content"
+                android:entries="@array/question6_answers" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="990px"
+                android:text="@string/question7"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner7"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1060px"
+                android:layout_height="wrap_content"
+                android:entries="@array/question7_answers" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1120px"
+                android:text="@string/question8"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner8"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1200px"
+                android:layout_height="wrap_content"
+                android:entries="@array/question8_answers" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1270px"
+                android:text="@string/question9"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner9"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1350px"
+                android:layout_height="wrap_content"
+                android:entries="@array/question9_answers" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1420px"
+                android:text="@string/question10"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner10"
+                android:layout_width="match_parent"
+                android:layout_marginTop="1550px"
+                android:layout_height="wrap_content"
+                android:entries="@array/question10_answers" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1630px"
+                android:onClick="CheckClick"
+                android:text="@string/check_name" />
+
+        </RelativeLayout>
+
     </ScrollView>
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:text="@string/name"
-        android:textSize="24sp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100px"
-        android:gravity="center_horizontal"
-        android:text="@string/question1"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="180px"
-        android:entries="@array/question1_answers" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="250px"
-        android:text="@string/question2"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="330px"
-        android:entries="@array/question2_answers" />
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="400px"
-        android:text="@string/question3"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner3"
-        android:layout_width="match_parent"
-        android:layout_marginTop="480px"
-        android:layout_height="wrap_content"
-        android:entries="@array/question3_answers" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="550px"
-        android:text="@string/question4"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner4"
-        android:layout_width="match_parent"
-        android:layout_marginTop="680px"
-        android:layout_height="wrap_content"
-        android:entries="@array/question4_answers" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="740px"
-        android:text="@string/question5"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner5"
-        android:layout_width="match_parent"
-        android:layout_marginTop="810px"
-        android:layout_height="wrap_content"
-        android:entries="@array/question5_answers" />
-
-    <TextView
-        android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="860px"
-        android:text="@string/question6"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner6"
-        android:layout_width="match_parent"
-        android:layout_marginTop="930px"
-        android:layout_height="wrap_content"
-        android:entries="@array/question6_answers" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="990px"
-        android:text="@string/question7"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner7"
-        android:layout_width="match_parent"
-        android:layout_marginTop="1060px"
-        android:layout_height="wrap_content"
-        android:entries="@array/question7_answers" />
-
-    <TextView
-        android:id="@+id/textView9"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1120px"
-        android:text="@string/question8"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner8"
-        android:layout_width="match_parent"
-        android:layout_marginTop="1200px"
-        android:layout_height="wrap_content"
-        android:entries="@array/question8_answers" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1270px"
-        android:text="@string/question9"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner9"
-        android:layout_width="match_parent"
-        android:layout_marginTop="1350px"
-        android:layout_height="wrap_content"
-        android:entries="@array/question9_answers" />
-
-    <TextView
-        android:id="@+id/textView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1420px"
-        android:text="@string/question10"
-        android:textSize="20sp" />
-
-    <Spinner
-        android:id="@+id/spinner10"
-        android:layout_width="match_parent"
-        android:layout_marginTop="1550px"
-        android:layout_height="wrap_content"
-        android:entries="@array/question10_answers" />
-
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="1630px"
-        android:onClick="CheckClick"
-        android:text="@string/check_name" />
 
 </RelativeLayout>
